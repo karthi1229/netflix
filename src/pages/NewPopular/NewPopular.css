@@ -1,0 +1,193 @@
+.movies {
+  padding-top: 100px; /* Added space below navbar */
+  background-color: black;
+  color: white;
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  z-index: 2000;
+}
+
+.show-toast {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeInOut 2.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; transform: translateY(10px); }
+}
+
+/* Modal (Trailer Popup) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Close Button (Back Arrow) */
+.back-arrow {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.back-arrow:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 10px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+/* Movie & TV Show Cards */
+.card {
+  background: black;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover img {
+  opacity: 0.85;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* Save Button with Conditional Display */
+.save-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  font-weight: bold;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.card:hover .save-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.saved .save-btn::before {
+  content: '\u2713'; /* Tick icon */
+  font-size: 24px;
+  color: limegreen;
+}
+
+/* Added to My List & Removed from My List Popup */
+.status-text {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.no-repeat-status {
+  display: none !important;
+}
+
+.show-status {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeOut 2s ease-in-out forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; display: none; }
+}

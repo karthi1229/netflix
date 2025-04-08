@@ -1,0 +1,30 @@
+.movies {
+  background-color: #111;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+.movies-category {
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+/* Optional scrollbar hiding */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .movies-category {
+    margin-top: 80px;
+    padding: 0 10px;
+  }
+}

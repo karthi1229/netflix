@@ -1,56 +1,42 @@
 .player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #000;
-    color: white;
-    position: relative;
-  }
-  
-  .player img {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 40px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .player img:hover {
-    transform: scale(1.1);
-  }
-  
-  .player iframe {
-    width: 80%;
-    height: 70%;
-    border-radius: 10px;
-  }
-  
-  .player-info {
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  .player-info p {
-    font-size: 16px;
-    margin: 5px 0;
-    color: #ddd;
-  }
-  
-  @media (max-width: 768px) {
-    .player iframe {
-      width: 95%;
-      height: 60%;
-    }
-  
-    .player img {
-      width: 30px;
-    }
-  
-    .player-info p {
-      font-size: 14px;
-    }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+  position: relative;
+  padding-top: 60px;
+  color: white;
+  text-align: center;
+}
+
+/* Back Arrow Styling */
+.back-arrow {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.back-arrow:hover {
+  transform: scale(1.1);
+}
+
+/* YouTube iframe Styling */
+.player iframe {
+  width: 90%;
+  height: 60vh;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Info Text Styling */
+.player-info {
+  margin-top: 20px;
+  color: #ddd;
+  font-size: 16px;
+}

@@ -9,10 +9,34 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-icons">
-        <img src={facebook_icon} alt="Facebook" />
-        <img src={instagram_icon} alt="Instagram" />
-        <img src={twitter_icon} alt="Twitter" />
-        <img src={youtube_icon} alt="YouTube" />
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={facebook_icon} alt="Facebook" />
+        </a>
+        <a
+          href="https://www.instagram.com/karthi12__29/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={instagram_icon} alt="Instagram" />
+        </a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={twitter_icon} alt="Twitter" />
+        </a>
+        <a
+          href="https://www.youtube.com/@karthiedits941"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={youtube_icon} alt="YouTube" />
+        </a>
       </div>
 
       <nav>
@@ -25,7 +49,7 @@ const Footer = () => {
           <li>Jobs</li>
           <li>Terms of Use</li>
           <li>Privacy</li>
-          <li>Legal Notices</li> {/* Fixed Typo */}
+          <li>Legal Notices</li>
           <li>Cookie Preferences</li>
           <li>Corporate Information</li>
           <li>Contact Us</li>

@@ -1,0 +1,58 @@
+/* Common styling (shared if you want consistent spacing across pages) */
+body {
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.movies,
+.tvshows-page {
+  background-color: #111;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-top: 100px; /* Push content below navbar */
+  padding-bottom: 50px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Movies specific section styling */
+.movies-category {
+  margin-top: 2rem;
+}
+
+/* TVShows specific section styling */
+.tvshows-section {
+  margin-bottom: 3rem;
+}
+
+.tvshows-page h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .movies,
+  .tvshows-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 80px;
+  }
+
+  .movies-category {
+    margin-top: 1rem;
+  }
+}

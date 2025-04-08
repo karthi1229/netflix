@@ -1,0 +1,45 @@
+/* src/components/Notification/Notification.css */
+.notification {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .notification-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .notification-dropdown {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 250px;
+    background-color: #141414;
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+  
+  .notification-dropdown h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+  }
+  
+  .notification-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #222;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  

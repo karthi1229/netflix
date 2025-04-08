@@ -158,3 +158,43 @@
         gap: 10px;
     }
 }
+.notification-wrapper {
+    position: relative;
+  }
+  
+  .notification-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #141414;
+    width: 320px;
+    border-radius: 8px;
+    padding: 12px;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .notification-dropdown h4 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .notification-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notification-dropdown li {
+    margin-bottom: 12px;
+    color: #e5e5e5;
+  }
+  
+  .notification-dropdown li strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #fff;
+  }
+  

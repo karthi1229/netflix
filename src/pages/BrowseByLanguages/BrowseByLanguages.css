@@ -1,0 +1,41 @@
+.browse-language-page {
+    background-color: #141414;
+    color: white;
+    padding: 80px 40px 40px;
+    min-height: 100vh;
+  }
+  
+  .browse-title {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  .language-section {
+    margin-bottom: 60px;
+  }
+  
+  .language-heading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #e5e5e5;
+  }
+  
+  .movie-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+  }
+  
+  .movie-row::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .movie-row::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+  }
+  

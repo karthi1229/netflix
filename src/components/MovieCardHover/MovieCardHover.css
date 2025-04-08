@@ -1,0 +1,107 @@
+.movie-card-container {
+    position: relative;
+    width: 200px;
+    min-width: 200px;
+    height: 300px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-card-container:hover {
+    transform: scale(1.05);
+    z-index: 2;
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Hover card */
+  .movie-hover-card {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    width: 300px;
+    background-color: #141414;
+    border-radius: 12px;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .hover-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .movie-hover-info {
+    padding: 12px;
+    color: white;
+  }
+  
+  .movie-hover-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  
+  .movie-hover-meta {
+    font-size: 0.75rem;
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+  
+  .movie-hover-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-hover-button {
+    background-color: #e50914;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .movie-hover-button:hover {
+    background-color: #f40612;
+  }
+  
+  .movie-hover-button.secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .movie-hover-button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .movie-hover-description {
+    font-size: 0.75rem;
+    color: #ccc;
+  }
+  
