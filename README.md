@@ -1,12 +1,25 @@
-# React + Vite
+# 🎬 Netflix Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive Netflix-inspired streaming platform built with **Next.js**, **Tailwind CSS**, and **Firebase Authentication**. Movie data is fetched from **The Movie Database (TMDB) API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **Responsive UI** (mobile, tablet, desktop friendly)
+- **Authentication** using Firebase (email/password, Google login)
+- **Dynamic Movie Data** from TMDB API
+- **Movie Carousel** and **Hover Cards** for smooth browsing
+- **Search Functionality**
+- **Reusable Components** for clean code architecture
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- **Frontend:** Next.js, Tailwind CSS
+- **Backend/API:** TMDB API
+- **Authentication:** Firebase Auth
+- **Deployment:** Vercel
+
+---
+
+## 📂 Folder Structure
